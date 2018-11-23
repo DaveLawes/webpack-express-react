@@ -1,0 +1,25 @@
+{
+  "name": "webpack-express-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaveLawes/webpack-express-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaveLawes/webpack-express-react/issues"
+  },
+  "homepage": "https://github.com/DaveLawes/webpack-express-react#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "webpack": "^4.26.0"
+  }
+}
