@@ -1,13 +1,21 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   mode: 'none',
-  entry: './client/client.js',
+  entry: [
+    'webpack-hot-middleware/client',
+    './client/client.js'
+  ],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/'
   },
+  plugins: [
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin()
+  ],
   module: {
     rules: [
       {
